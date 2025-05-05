@@ -1,0 +1,4 @@
+# VOLD - fstab.enableswap
+/dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/hidden    /preload        ext4    defaults        voldmanaged=preload:auto
+/devices/platform/mtk-msdc.0/11240000.msdc1/mmc_host/mmc*       auto            vfat    defaults        voldmanaged=sdcard:auto
+/devices/platform/11270000.usb3_xhci/usb*                       auto            auto    defaults        voldmanaged=usb:auto
