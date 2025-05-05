@@ -1264,6 +1264,7 @@ on charger
     chmod 0400 /efs/Battery/battery_data.dat
     write /sys/class/power_supply/battery/batt_update_data "/efs/Battery/battery_data.dat"
     class_start sec-charger
+	setprop sys.powerctl reboot
 
 on property:vold.decrypt=trigger_reset_main
     class_reset main
